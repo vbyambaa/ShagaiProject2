@@ -41,6 +41,7 @@
             this.shagaiGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ruleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restartbtn = new System.Windows.Forms.Button();
+            this.exitbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -183,13 +184,25 @@
             // 
             this.restartbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.restartbtn.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.restartbtn.Location = new System.Drawing.Point(273, 364);
+            this.restartbtn.Location = new System.Drawing.Point(394, 369);
             this.restartbtn.Name = "restartbtn";
-            this.restartbtn.Size = new System.Drawing.Size(184, 40);
+            this.restartbtn.Size = new System.Drawing.Size(111, 40);
             this.restartbtn.TabIndex = 9;
             this.restartbtn.Text = "Restart";
             this.restartbtn.UseVisualStyleBackColor = true;
             this.restartbtn.Click += new System.EventHandler(this.restartbtn_Click);
+            // 
+            // exitbtn
+            // 
+            this.exitbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitbtn.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.exitbtn.Location = new System.Drawing.Point(234, 369);
+            this.exitbtn.Name = "exitbtn";
+            this.exitbtn.Size = new System.Drawing.Size(123, 40);
+            this.exitbtn.TabIndex = 10;
+            this.exitbtn.Text = "Exit ";
+            this.exitbtn.UseVisualStyleBackColor = true;
+            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
             // 
             // Shagai
             // 
@@ -197,6 +210,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(791, 479);
+            this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.restartbtn);
             this.Controls.Add(this.countsLabel);
             this.Controls.Add(this.attemptsLabel);
@@ -238,6 +252,7 @@
         private System.Windows.Forms.ToolStripMenuItem shagaiGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ruleToolStripMenuItem;
         private System.Windows.Forms.Button restartbtn;
+        private System.Windows.Forms.Button exitbtn;
     }
 }
 
